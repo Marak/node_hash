@@ -24,3 +24,9 @@ var salted_sha1 = hash.sha1( user_password, salt);
 sys.puts(salted_sha1);
 
 
+/****** sha256 ******/
+var sha256 = hash.sha256( user_password );
+sys.puts(sha256);
+
+var salted_sha256 = hash.sha256( user_password, salt);
+sys.puts(salted_sha256);
