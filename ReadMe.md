@@ -1,4 +1,4 @@
-#node-hash - super simple string hashing for node.js
+#node_hash - super simple string hashing for node.js
 ## supports md5, sha1, sha256, sha512, ripemd160
 
 <img border = "0" src = "http://imgur.com/diDP0.jpg"/>
