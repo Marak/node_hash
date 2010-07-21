@@ -1,6 +1,8 @@
 #node-hash - super simple string hashing for node.js
 ## supports md5, sha1, sha256, sha512, ripemd160
 
+<img border = "0" src = "http://imgur.com/diDP0.jpg"/>
+
 ##what is a hash?
 
 a "hash algorithm" is a one-way mathematical equation that takes in an arbitrary length input and produces a fixed length output string.	the output of this algorithm is called a "hash value" and is a unique and extremely compact numerical representation of the original input.
