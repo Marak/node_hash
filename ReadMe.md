@@ -71,10 +71,10 @@ you can also provide an optional "salt" that will further encrypt your password,
       sys.puts(salted_ripemd160);
 
 ## faq
-**why not use the node.js crypto library instead?**
+**why not use the node.js <a href = "http://nodejs.org/api.html#crypto-236">crypto library</a> instead?**
 
-*node_hash DOES use the built in node.js crypto library, we are just wrapping it for easy use*
+*node_hash DOES use the built in node.js <a href = "http://nodejs.org/api.html#crypto-236">crypto</a> library, we are just wrapping it for easy use*
 
 **why doesn't node_hash do X (binary, base64, streaming, etc)?**
 
-*node_hash is meant as a very simple  library for hashing text with optional salts in the most common encryption algorithms. if you need finer tuned control, you should be using the crypto module directly*
+*node_hash is meant as a very simple  library for hashing text with optional salts in the most common encryption algorithms. if you need finer tuned control, you should be using the <a href = "http://nodejs.org/api.html#crypto-236">crypto</a> module directly*
