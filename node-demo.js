@@ -36,3 +36,10 @@ sys.puts(sha512);
 
 var salted_sha512 = hash.sha512( user_password, salt);
 sys.puts(salted_sha512);
+
+/****** ripemd160 ******/
+var ripemd160 = hash.ripemd160( user_password );
+sys.puts(ripemd160);
+
+var salted_ripemd160 = hash.ripemd160( user_password, salt);
+sys.puts(salted_ripemd160);
