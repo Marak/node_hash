@@ -1,6 +1,10 @@
 #node-hash - super simple string hashing for node.js
 ## supports md5, sha1, sha256, sha512, ripemd160
 
+##what is a hash?
+
+a "hash algorithm" is a one-way mathematical equation that takes in an arbitrary length input and produces a fixed length output string.	the output of this algorithm is called a "hash value" and is a unique and extremely compact numerical representation of the original input.
+
 ##why bother hashing?
 
 there are many reasons for hashing and many detailed explanations on the web. i'll illustrate one very simple example and why I am currently using this library. 
@@ -13,11 +17,11 @@ access might not even be unintentional. imagine you were running a development s
 
 instead of storing your user's password as plaintext, you could perform a hash on the password before being storing it in your database. 
 
-instead of seeing a human readable format, you will see an obfuscated string representing the hash of your password. 
+now, instead of seeing a human readable format, you will see an obfuscated string representing the hash of your password. 
 
 everytime you want to check if a value matches that hash (in this case, perhaps a login form handler), you can simply call the same hashing method on that value and compare it to the value in your database. if the hashes match, the passwords match.
 
-you can also provide an optional "salt" that will further hash your password, making it even harder to reverse / crack. 
+you can also provide an optional "salt" that will further encrypt your password, making it even harder to reverse / crack. 
 
 ##usage
 
