@@ -13,7 +13,7 @@ there are many reasons for hashing and many detailed explanations on the web. i'
 
 imagine you had a database that stored user accounts with passwords. anyone who got access to your database, would have access to the passwords of all your users. many people utilize the same password across many services, so their entire online identity could be compromised. 
 
-access might not even be unintentional. imagine you were running a development shop and required a minor schema change for your users table. this task could be delegated to a junior developer or contractor, but since your passwords are stored in plain text you've just given the passwords of your entire user base to a low-level employee.
+even if you have your database fully protected from outside intruders, you can still be at risk. imagine you were running a development shop and required a minor schema change for your users table. this task could be delegated to a junior developer or contractor, but since your passwords are stored in plain text you've just given the passwords of your entire user base to a low-level employee.
 
 ##how would hashing help this problem?
 
