@@ -1,7 +1,7 @@
 #node_hash - a super simple hashing library for node.js
 ## supports md5, sha1, sha256, sha512, ripemd160
 
-<img border = "0" src = "http://imgur.com/diDP0.jpg"/>
+<img border = "0" src = "https://github.com/Marak/node_hash/raw/master/logo.jpg"/>
 
 ##what is a hash?
 
@@ -23,7 +23,7 @@ now, instead of seeing a human readable format, you will see an obfuscated strin
 
 everytime you want to check if a value matches that hash (in this case, perhaps a login form handler), you can simply call the same hashing method on that value and compare it to the value in your database. if the hashes match, the passwords match.
 
-you can also provide an optional "salt" that will further encrypt your password, making it even harder to reverse / crack. 
+you can also provide an optional "salt" that will further encrypt your password, making it even harder to reverse / crack. you should use a unique salt for every password and store that salt.
 
 ##usage
 
@@ -33,7 +33,7 @@ you can also provide an optional "salt" that will further encrypt your password,
       // a user's password, hash this please
       var user_password = "password";
 
-      // don't expose your salt
+      // don't expose your salt ( you should use a new salt for every password )
       var salt = "sUp3rS3CRiT$@lt";
 
 

@@ -6,16 +6,31 @@
       var user_password = "password";
 
       // don't expose your salt
-      var salt = "sUp3rS3CRiT$@lt";
+      var salt = "sUp3rS3CRiT$@lt"; // change this per hash
 
 
-      /****** md5 ******/
+      /****** md5 hex ******/
       var md5 = hash.md5(user_password);
       sys.puts(md5);
 
       var salted_md5 = hash.md5(user_password, salt);
       sys.puts(salted_md5);
 
+
+      /****** md5 utf-8 ******/
+      var md5 = hash.md5(user_password);
+      sys.puts(md5);
+
+      var salted_md5 = hash.md5(user_password, salt);
+      sys.puts(salted_md5);
+
+      /****** md5 binary ******/
+      var md5 = hash.md5(user_password);
+      sys.puts(md5);
+
+      var salted_md5 = hash.md5(user_password, salt);
+      sys.puts(salted_md5);
+      
       /****** sha1 ******/
       var sha1 = hash.sha1(user_password);
       sys.puts(sha1);
