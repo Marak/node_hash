@@ -1,0 +1,12 @@
+{
+  "name": "node_hash",
+  "description": "helper methods for hashing",
+  "version": "0.2.0",
+  "author": "Marak Squires",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Marak/node_hash.git"
+  },
+  "engine": [ "node >=0.1.90" ],
+  "main": "lib/hash"
+}
